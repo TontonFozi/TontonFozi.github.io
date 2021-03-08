@@ -1,0 +1,190 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+}
+
+section.top-page {
+    background-color: darkcyan;
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size:  95px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* services */
+
+.talent {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.talent-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: darkcyan;
+}
+
+.talent-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* best sells */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: darkcyan;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-scripts {
+    margin: 100px;
+}
+
+.best-scripts {
+    display: grid;
+    min-height: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+.scripts-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+}
+
+.no-grid {
+    min-width: 400px;
+    height: 150px;
+    flex: 1;
+}
+
+.scripts1 {
+    background-image: url(filtre1.PNG);
+}
+
+.scripts-details {
+    position: absolute;
+    width: 88%;
+    bottom: 0;
+    background-color: #FFDFFDFD;
+    padding: 5px 20px;
+}
+
+.scripts-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2px;
+}
+
+.scripts-desc {
+    color: darkcyan;
+    line-height: 3px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* Tout mes scripts */
+
+.all-scripts {
+    margin: 100px;
+}
+
+.scripts-grid {
+    display: grid;
+    min-height: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
