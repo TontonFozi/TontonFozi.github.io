@@ -157,7 +157,7 @@ nav.nav li a {
 .scripts-desc {
     color: darkcyan;
     line-height: 3px;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 800;
 }
 
@@ -172,19 +172,4 @@ nav.nav li a {
     min-height: 80px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 400px);
-}
-
-/* pied de page */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 100px;
-    font-weight: 600;
-}
-
-footer a.cgv {
-    text-decoration: none;
-    color: black;
 }
