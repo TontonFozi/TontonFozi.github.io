@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
 
@@ -22,11 +21,11 @@ header.header {
 }
 
 header.header img {
-    width: 75px;
+    width: 150px;
 }
 
 section.top-page {
-    background-color: darkcyan;
+    background-color: rgba(15, 14, 14, 0.945);
     background-size: cover;
     height: 80vh;
     padding: 25px;
@@ -40,10 +39,15 @@ section.top-page {
 
 .big-title {
     color: white;
-    font-size:  55px;
+    font-size:  60px;
     font-family: 'Abril FatFace', cursive;
-    width: 100%;
-    margin-top: 100px;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: white;
+    position: absolute;
 }
 
 /* menu de navigation */
@@ -52,7 +56,7 @@ nav.nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 300px;
+    width: 400px;
     margin-left: 30px;
 }
 
@@ -60,13 +64,12 @@ nav.nav li a {
     color: white;
 }
 
-/* services */
+/* talents */
 
-.talent {
+.talents {
     display: flex;
     justify-content: space-evenly;
-    margin-right: 5px;
-    margin-top: 25px;
+    margin: 50px;
 }
 
 .talent-item {
@@ -76,13 +79,13 @@ nav.nav li a {
 }
 
 .delivery-icon {
-    font-size: 45px;
-    color: darkcyan;
+    font-size: 50px;
+    color: black;
 }
 
 .talent-details {
     font-weight: 600;
-    width: 100px;
+    width: 125px;
     text-align: center;
 }
 
@@ -91,82 +94,131 @@ nav.nav li a {
 .section-title {
     font-size: 50px;
     font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
     position: relative;
 }
 
 .section-title::before {
     content: "";
     position: absolute;
-    background-color: darkcyan;
+    background-color: black;
     width: 50px;
     height: 7px;
     bottom: 0;
 }
 
-.script1 {
-    background-image: url(filtre1.PNG);
-}
-
 .bests-scripts {
-    margin: 15px;
+    margin: 50px;
 }
 
 .best-scripts {
-    display: grid;
-    min-height: 80px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 400px);
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.scripts-box {
+.script-box {
     position: relative;
-    width: 350px;
     background-size: cover;
     background-position: center;
 }
 
 .no-grid {
-    width: 500px;
-    height: 150px;
+    min-width: 300px;
+    height: 500px;
     flex: 1;
 }
 
-.scripts-details {
-    position: absolute;
-    bottom: 0;
-    background-color: #FFDFFDFD;
-    padding: 10px 20px;
+.script1 {
+    background-image: url(../css/filtre1.PNG);
 }
 
-.scripts-name {
-    color: black;
+.script2 {
+    background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.script3 {
+    background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+.script4 {
+    background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+.script-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.script-name {
     font-size: 22px;
     font-weight: 600;
     line-height: 3px;
 }
 
-.scripts-desc {
-    color: darkcyan;
-    line-height: 10px;
-    font-size: 11px;
+.script-price {
+    color: black;
+    line-height: 15px;
+    font-size: 14px;
     font-weight: 800;
 }
 
-/* Tout mes scripts */
-
-.section-title2 {
-    font-size: 25px;
-    font-family: 'Abril FatFace', cursive;
-    position: relative;
-}
+/* nos scriptes */
 
 .all-scripts {
-    margin: 100px;
+    margin: 50px;
 }
 
-.scripts-grid {
+.script-grid {
     display: grid;
-    min-height: 80px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 400px);
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 200px);
+}
+
+.script-grid1 {
+    background-image: url(../css/filtre1.PNG);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.script-grid2 {
+    background-image: url(../images/nos_scriptes/2.jpg);
+    grid-column: 3/5;
+}
+
+.script-grid3 {
+    background-image: url(../images/nos_scriptes/3.jpg);
+    grid-column: 3/5;
+}
+
+.script-grid4 {
+    background-image: url(../images/nos_scriptes/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.script-grid5 {
+    background-image: url(../images/nos_scriptes/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.script-grid6 {
+    background-image: url(../images/nos_scriptes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
 }
